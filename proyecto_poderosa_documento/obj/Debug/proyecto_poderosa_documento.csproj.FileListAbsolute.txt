@@ -190,3 +190,6 @@ C:\Users\SM - Elizabeth Ramos\PROYECTOS\PODEROSA\proyecto_poderosa_documento_202
 C:\Users\SM - Elizabeth Ramos\PROYECTOS\PODEROSA\proyecto_poderosa_documento_2025\proyecto_poderosa_documento\obj\Debug\proyecto.741EFCD5.Up2Date
 C:\Users\SM - Elizabeth Ramos\PROYECTOS\PODEROSA\proyecto_poderosa_documento_2025\proyecto_poderosa_documento\obj\Debug\proyecto_poderosa_documento.dll
 C:\Users\SM - Elizabeth Ramos\PROYECTOS\PODEROSA\proyecto_poderosa_documento_2025\proyecto_poderosa_documento\obj\Debug\proyecto_poderosa_documento.pdb
+C:\Users\SM - Elizabeth Ramos\Desktop\proyecto_poderosa_documento_2025\proyecto_poderosa_documento\bin\System.Web.Http.WebHost.dll
+C:\Users\SM - Elizabeth Ramos\Desktop\proyecto_poderosa_documento_2025\proyecto_poderosa_documento\bin\System.Web.Http.WebHost.xml
+C:\Users\SM - Elizabeth Ramos\Desktop\proyecto_poderosa_documento_2025\proyecto_poderosa_documento\bin\es\System.Web.Http.WebHost.resources.dll
