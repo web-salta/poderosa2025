@@ -1,0 +1,51 @@
+﻿@Html.Partial("~/Views/Shared/_head.cshtml")
+<!-- METAS -->
+<title>Inicio | PODEROSA</title>
+<!-- Basic HTML Meta Tags -->
+<meta name='title' content='Inicio | PODEROSA' />
+<meta name='description' content='Empresa minera aurífera ubicada en el distrito y provincia de Pataz, a casi 320 Km de la ciudad de Trujillo, a una altura que va entre los 1,250 y 3,000 m.s.n.m. en la región La Libertad, Perú. Con oficinas administrativas y almacenes en Lima y Trujillo.' />
+<meta name='url' content='https://www.poderosa.com.pe/home/quienes-somos' />
+<meta name='keywords' content='minera poderosa, asociación pataz' />
+<!-- OpenGraph Meta Tags -->
+<meta property='og:type' content='website' />
+<meta property='og:title' content='Inicio | PODEROSA' />
+<meta property='og:description' content='Empresa minera aurífera ubicada en el distrito y provincia de Pataz, a casi 320 Km de la ciudad de Trujillo, a una altura que va entre los 1,250 y 3,000 m.s.n.m. en la región La Libertad, Perú. Con oficinas administrativas y almacenes en Lima y Trujillo.' />
+<meta property='og:url' content='https://www.poderosa.com.pe/home/quienes-somos' />
+<meta property='og:image' content='https://www.poderosa.com.pe/Content/img/compartir.jpg' />
+</head>
+<body>
+    <div class="menuSecuVelo"></div>
+    @Html.Partial("~/Views/Shared/_header.cshtml")
+    <section class="pt-4 ">
+        <div class="bannerInterno__contenedor">
+            <img src="~/Content/img/cabeceras/03-calidad-e-innovacion/03-03-colpa/01.png" class="img-fluid  w-100 d-none  d-lg-block" alt="">
+            <img src="~/Content/img/cabeceras/03-calidad-e-innovacion/03-03-colpa/01-tablet.jpg" class="img-fluid  d-none d-md-block d-sm-none d-lg-none" alt="">
+            <img src="~/Content/img/cabeceras/03-calidad-e-innovacion/03-03-colpa/01-movil.jpg" class="img-fluid  d-block d-md-none d-lg-none" alt="">
+            <img src="~/Content/img/pagina-interna/forma-dorada-transparente.png" class="img-fluid bannerInterno__dorada" alt="...">
+            <div class="bannerInterno__texto">
+                <h2 class="bannerInterno__indice fuente-5"> Colpa– 5S</h2>
+                <h1 class="bannerInterno__titulo fuente-3">Premio Nacional Kaizen - 5S</h1>
+            </div>
+            <img src="~/Content/img/pagina-interna/forma-dorada.png" class="img-fluid bannerInterno__small" alt="">
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class=" col-lg-6 pb-5">
+                    <img src="https://placehold.co/600x300" alt="" class="img-fluid h-100 w-100 rounded-right-100">
+                </div>
+                <div class=" col-lg-6 contenedor-lista">
+                    <p class="fuente-4">
+                        Como parte del fortalecimiento de la disciplina COLPA, participamos en el Premio Nacional 5S-Kaizen, organizado por AOTS. Trabajamos esta metodología desde 1999, desde entonces hemos logrado obtener medallas de plata, oro y diamante en las diferentes participaciones.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    @Html.Partial("~/Views/Shared/_footer.cshtml")
+</body>
+@Html.Partial("~/Views/Shared/_foot.cshtml")
+</html>
