@@ -25,6 +25,10 @@ namespace proyecto_poderosa_documento.Controllers
         {
             return View();
         }
+        public ActionResult Administrador()
+        {
+            return View();
+        }
 
     }
 }

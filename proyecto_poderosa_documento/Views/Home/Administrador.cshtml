@@ -1,0 +1,86 @@
+﻿@{
+    Layout = null; // Si no estás usando un Layout, de lo contrario configura el Layout adecuado
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Lateral</title>
+    <!-- Vinculando el archivo CSS desde la carpeta wwwroot -->
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/modules/administrador.css")">
+</head>
+<body>
+
+    <!-- Menú lateral -->
+    <div class="sidebar">
+        <a href="#" id="noticiaLink">Noticia</a>
+        <a href="#" id="popupLink">PopUp</a>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="content">
+        <div id="noticiaContent">
+            <h1>Bienvenido a la sección Noticia</h1>
+            <p>Esta es la sección de noticias.</p>
+        </div>
+        <div id="popupContent" class="hidden">
+            <h1>PopUp</h1>
+            <p>Este es el contenido del PopUp.</p>
+        </div>
+    </div>
+
+    <!-- Popup -->
+    <div class="popup" id="popup">
+        <h2>Este es un PopUp</h2>
+        <p>Haz click en el botón para cerrar.</p>
+        <button onclick="closePopup()">Cerrar</button>
+    </div>
+
+    <script>
+        // Obtener los elementos
+        const noticiaLink = document.getElementById('noticiaLink');
+        const popupLink = document.getElementById('popupLink');
+        const noticiaContent = document.getElementById('noticiaContent');
+        const popupContent = document.getElementById('popupContent');
+        const popup = document.getElementById('popup');
+
+        // Función para mostrar el popup
+        function showPopup() {
+            popup.classList.add('active');
+        }
+
+        // Función para cerrar el popup
+        function closePopup() {
+            popup.classList.remove('active');
+        }
+
+        // Función para cambiar el contenido visible
+        function showContent(content) {
+            // Ocultar ambos contenidos
+            noticiaContent.classList.add('hidden');
+            popupContent.classList.add('hidden');
+
+            // Mostrar el contenido seleccionado
+            content.classList.remove('hidden');
+        }
+
+        // Eventos de clic para las opciones
+        noticiaLink.addEventListener('click', function() {
+            showContent(noticiaContent); // Mostrar la sección Noticia
+        });
+
+        popupLink.addEventListener('click', function() {
+            showContent(popupContent); // Mostrar la sección PopUp
+            showPopup(); // Mostrar el PopUp
+        });
+
+        // Mostrar Noticia por defecto al cargar la página
+        window.onload = function() {
+            showContent(noticiaContent); // Mostrar la sección Noticia por defecto
+        }
+    </script>
+
+</body>
+</html>
